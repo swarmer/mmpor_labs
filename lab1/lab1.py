@@ -138,15 +138,15 @@ class Timetable:
         ]
 
         objective = self.objective = solver.Objective()
-        objective.SetCoefficient(f1, 8)
-        objective.SetCoefficient(f2, 8)
-        objective.SetCoefficient(p1, 6)
-        objective.SetCoefficient(p2, 7)
-        objective.SetCoefficient(p3, 9)
-        objective.SetCoefficient(p4, 10)
-        objective.SetCoefficient(p5, 8)
-        objective.SetCoefficient(p6, 6)
-        objective.SetCoefficient(p7, 6)
+        objective.SetCoefficient(f1, 8 * 8)
+        objective.SetCoefficient(f2, 8 * 8)
+        objective.SetCoefficient(p1, 6 * 4)
+        objective.SetCoefficient(p2, 7 * 4)
+        objective.SetCoefficient(p3, 9 * 4)
+        objective.SetCoefficient(p4, 10 * 4)
+        objective.SetCoefficient(p5, 8 * 4)
+        objective.SetCoefficient(p6, 6 * 4)
+        objective.SetCoefficient(p7, 6 * 4)
         objective.SetMinimization()
 
     def solve(self):
