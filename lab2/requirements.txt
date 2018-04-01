@@ -1,0 +1,2 @@
+numpy
+ortools==6.7.4973
